@@ -102,6 +102,7 @@ img {
 .show .back-to-position.delay-3 {
   transition-delay: .9s;
 }
+
 /* HEADER */
 header {
    background-color: #f6f5f0;

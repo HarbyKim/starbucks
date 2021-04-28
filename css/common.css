@@ -272,7 +272,50 @@ header .badges .badge {
     box-shadow: 4px 4px 10px rgba(0,0,0,.15);
     cursor: pointer;
 }
-
+/* AWAEDS */
+.awards {
+    background-color:#272727;
+  }
+  .awards .inner {
+    padding: 40px 0;
+  }
+  .awards .swiper-container {
+    width: 100%;
+    height: 40px;
+  }
+  .awards .swiper-prev,
+  .awards .swiper-next {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    opacity: .3;
+    cursor: pointer;
+    display: flex; 
+    /* 가끔 내부 컨텐츠의 위치를 조정하기 위해 Flex가 사용된다 굳이 사용목적에만 엃매히지 말자 */
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: .3s;
+  }
+  .awards .swiper-prev {
+    left: -100px;
+  }
+  .awards .swiper-next {
+    right: -100px;
+  }
+  
+  .awards .swiper-prev:hover,
+  .awards .swiper-next:hover {
+    background-color: #eee;
+    color: #333;
+  }
 /* FOOTER */
 footer {
     background-color: #272727;

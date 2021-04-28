@@ -17,6 +17,17 @@ serachInputEl.addEventListener('blur', function() {
     serachInputEl.setAttribute('placeholder','');
 });
 
+new Swiper('.awards .swiper-container', {
+    direction: 'horizontal',
+    autoplay: true,
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 5,
+    navigation: {
+      prevEl: '.awards .swiper-prev',
+      nextEl: '.awards .swiper-next'
+  }
+});
 
 const thisYear =document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
